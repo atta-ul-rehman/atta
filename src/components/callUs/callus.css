@@ -1,0 +1,73 @@
+.callus {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  padding-top: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+.callus1,
+.callus2,
+.callus3 {
+  padding: 10;
+}
+
+.callus-div1,
+.callus-div2,
+.callus-div3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.callus .icon {
+  font-size: 3em;
+}
+
+.callus span {
+  font-weight: 600;
+}
+.callus p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 680px) {
+  .callus {
+    padding: 0;
+    height: 14rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .callus .icon {
+    font-size: 2em;
+  }
+  .callus span {
+    font-size: large;
+  }
+  .callus p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .callus .callus-div1 {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .callus {
+    padding: 0;
+    height: 14rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .callus .icon {
+    font-size: 1.5em;
+  }
+  .callus span {
+    font-size: medium;
+  }
+  .callus p {
+    text-align: center;
+    font-size: 10px;
+  }
+}

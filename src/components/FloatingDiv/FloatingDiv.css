@@ -1,0 +1,47 @@
+.floatingDiv,
+.floatingDiv1 {
+  justify-content: space-around;
+  background: white;
+  box-shadow: var(--boxShadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  padding: 0px 28px 0px 0px;
+  height: 4.5rem;
+}
+
+.floatingDiv > img,
+.floatingDiv1 > img {
+  transform: scale(0.4);
+}
+.floatingDiv > span {
+  font-family: sans-serif;
+  font-size: 16px;
+  /* yahan ye color add kia hy bad mein dark mode k waqt */
+  color: black;
+}
+.floatingDiv1 > span {
+  font-family: sans-serif;
+  font-size: 18px;
+  /* yahan ye color add kia hy bad mein dark mode k waqt */
+  color: black;
+  font-weight: bolder;
+}
+.floatingDiv1 > span:after {
+  content: "";
+  animation: changetext 7s infinite linear;
+}
+@keyframes changetext {
+  0% {
+    content: "UI-developer";
+  }
+  30% {
+    content: "Mobile-developer";
+  }
+  65% {
+    content: "Web-developer";
+  }
+  100% {
+    content: "Front-End-developer";
+  }
+}

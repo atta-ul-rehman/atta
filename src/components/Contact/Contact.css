@@ -1,0 +1,215 @@
+.contact-form {
+  display: flex;
+  height: 80vh;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10rem;
+}
+.w-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  align-items: flex-start;
+}
+.w-left .desc {
+  width: 25rem;
+}
+.contact-form .w-left .awesome span {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.w-left > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.w-left .user {
+  width: 25rem;
+  height: 2rem;
+  padding: 0.3em;
+  outline: none;
+  border: 2px solid var(--orange);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 5rem !important;
+}
+
+.c-right {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.c-right img {
+  width: 35rem;
+  height: 35rem;
+}
+.c-right .map-wrapper {
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.c-right img:hover {
+  transform: scale(1.2);
+}
+.c-right .map-marker {
+  position: absolute;
+  right: 40%;
+  top: 40%;
+  width: 4rem;
+  height: 4rem;
+}
+.c-right .Address {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  background: rgb(0, 0, 0, 1);
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+}
+.c-right .Address span {
+  font-size: larger;
+  font-weight: 600;
+}
+.c-right .Address p {
+  font-size: small;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.c-right .Address .cntct {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  font-weight: 400;
+}
+
+.c-blur1 {
+  top: 1rem;
+  left: 8rem;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-form {
+    padding: 0;
+    flex-direction: column;
+    gap: 2rem;
+    height: 120vh;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .w-left .user {
+    width: 33rem;
+  }
+  .contact-form .w-left {
+    margin-bottom: 0rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0rem;
+    text-align: center;
+  }
+  .contact-form .w-left .desc {
+    font-size: 20px;
+    width: 30rem;
+  }
+  .contact-form .w-left .awesome span {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .c-right img {
+    width: 35rem;
+    height: 35rem;
+  }
+  .c-right .map-marker {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .contact-form {
+    padding: 0;
+    flex-direction: column;
+    gap: 2rem;
+    height: 120vh;
+    align-items: center;
+    margin-bottom: 15rem;
+  }
+  .w-left .user {
+    width: 23rem;
+  }
+  .contact-form .w-left {
+    margin-bottom: 0rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0rem;
+    text-align: center;
+  }
+  .contact-form .w-left .desc {
+    font-size: 16px;
+    width: 25rem;
+  }
+  .contact-form .w-left .awesome span {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .c-right img {
+    width: 25rem;
+    height: 25rem;
+  }
+  .c-right .map-marker {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-form {
+    padding: 0;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .w-left .user {
+    width: 18rem;
+  }
+  .contact-form .w-left {
+    margin-bottom: 0rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-form .w-left .desc {
+    font-size: 14px;
+    width: 20rem;
+  }
+  .contact-form .w-left .awesome span {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .c-right img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .c-right .map-marker {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

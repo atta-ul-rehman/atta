@@ -1,0 +1,93 @@
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --colour-black: #1e1e1e;
+  --colour-white: #ffffff;
+}
+
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--black);
+}
+
+.button {
+  position: relative;
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  border-radius: 34px;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  border: 2px solid var(--orange);
+  transform: translate(-10%, -20%);
+  transition: 0.5s;
+}
+
+.button:hover {
+  background: #fff;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  width: 54%;
+  height: 100%;
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  z-index: -1;
+  opacity: 0;
+}
+
+.button:hover:before {
+  transition: 0.5s;
+  opacity: 1;
+  top: 5px;
+  left: -5px;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 34px 0px 34px;
+}
+.button:hover:after {
+  transition: 0.5s;
+  opacity: 1;
+  top: -5px;
+  right: -5px;
+  box-shadow: -5px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 34px 0px 34px;
+}
+
+/* .button:hover {
+    background: white;
+    cursor: pointer;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+  } */
+
+@media screen and (max-width: 800px) {
+  .App {
+    padding: 0.5rem 1rem;
+    border: 2px solid red;
+  }
+}
+@media screen and (max-width: 680px) {
+  .App {
+    padding: 0.5rem 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 1rem;
+  }
+  .button {
+    font-size: 14px;
+    padding: 8px 20px 8px 20px;
+  }
+}

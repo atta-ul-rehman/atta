@@ -1,0 +1,153 @@
+.services {
+  padding: 0rem;
+  display: flex;
+  height: 30rem;
+  margin-bottom: 8rem;
+  margin-top: 9rem;
+  z-index: 1;
+}
+/* left side */
+.awesome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* gap: 20px; */
+}
+
+.awesome > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesome > :nth-child(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.my-services {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+.s-button {
+  height: 2.6rem;
+  margin-top: 2rem;
+}
+/* right sided */
+.cards {
+  position: relative;
+}
+.cards > * {
+  position: absolute;
+}
+
+/* blur */
+.s-s-blur2 {
+  left: 4rem;
+  top: 28rem;
+  background: rgb(221, 223, 253);
+}
+
+.s-blur1 {
+  top: 13rem;
+  left: -18rem;
+}
+
+.my-services {
+  width: 120vh;
+  line-height: 2;
+}
+@media screen and (max-width: 800px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 42rem;
+    padding: 0;
+    margin-top: 3rem;
+  }
+
+  .cards {
+    transform: scale(0.9);
+    margin-bottom: 0rem;
+    margin-left: 12rem;
+  }
+  .awesome {
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-services {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .services {
+    flex-direction: column;
+    gap: 5rem;
+    height: 68rem;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 34vh;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    gap: 18rem;
+    margin-left: 0rem;
+    transform: scale(1.1);
+  }
+  .cards > * {
+    position: static;
+  }
+  .awesome {
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-services {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services {
+    flex-direction: column;
+    gap: 2rem;
+    height: 60rem;
+    padding: 0;
+    margin-top: 3rem;
+  }
+
+  .my-services {
+    width: 46vh;
+    line-height: normal;
+    text-align: center;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 18rem;
+    margin-left: 0rem;
+    transform: scale(1.1);
+  }
+  .cards > * {
+    position: static;
+  }
+  .awesome {
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+}

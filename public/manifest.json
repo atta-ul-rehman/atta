@@ -1,0 +1,15 @@
+{
+    "short_name": "Atta.dev",
+    "name": "Weather: Do I need an umbrella?",
+    "icons": [
+      {
+        "src": "download.png",
+        "type": "image/png",
+        "sizes": "64x64 32x32 16x16"
+      }
+    ],
+    "start_url": ".",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "theme_color": "#000000"
+}
