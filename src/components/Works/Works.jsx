@@ -23,12 +23,15 @@ const Works = () => {
           <span style={{ color: darkMode ? "white" : "" }}>
             Works for All these
           </span>
-          <span>Brands & Clients</span>
+          <span>Platforms & Clients</span>
           <span className="aws-info" style={{ color: darkMode && "white" }}>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+            Being a student I prefer freelancing and have worked on alot of
+            freelancing platforms.
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            I have designing and developing user interfaces, testing, debugging,
+            and training staff.
+            <br />
+            Have Developed projects that got outstanding remarks in my career
             <br />
             y dummy text of printingLorem
             <br />

@@ -33,13 +33,15 @@ const Intro = () => {
             <span className="name-after">Atta ul Rehman</span>
           </div>
           <span style={{ color: darkMode && "white" }}>
-            I’m a Front-End Developer located in Pakistan. I have a serious
+            I’m a Full-Stack Developer located in Pakistan. I have a serious
             passion for UI effects, animations and creating intuitive, dynamic
-            user experiences. Well-organised person, problem solver, independent
+            user experiences .Apart form these I also try to make sure that app
+            has high performance and responsiveness to requests from the
+            front-end. I am Well-organised person, problem solver, independent
             employee with high attention to detail. Fan of MMA, outdoor
-            activities, TV series and English literature. A family person and
-            father of two fractious boys, Interested in the entire frontend
-            spectrum and working on ambitious projects with positive people.
+            activities, TV series and English literature. Interested in the
+            entire frontend spectrum and working on ambitious projects with
+            positive people.
           </span>
         </div>
         <Link className="hire-me-content" to="contact" smooth={true} spy={true}>

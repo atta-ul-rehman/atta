@@ -21,7 +21,7 @@ const Navbar = () => {
         <div ref={ref} className="n-list n-list2">
           <ul style={{ listStyleType: "none" }}>
             <li>
-              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
+              <Link to="Navbar" activeClass="active" spy={true} smooth={true}>
                 Home
               </Link>
             </li>
@@ -52,10 +52,10 @@ const Navbar = () => {
             onClick={toggleMenu}
           />
         </div>
-        <Link spy={true} smooth={true}>
+        <Link to="contact" spy={true} smooth={true}>
           <button className="button n-button">Contact</button>
         </Link>
-        <div spy={true} smooth={true} onClick={toggleMenu}>
+        <div onClick={toggleMenu}>
           <img src={menu} alt="menu" />
         </div>
       </div>

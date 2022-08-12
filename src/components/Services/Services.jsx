@@ -28,18 +28,21 @@ const Services = () => {
         <span>services</span>
         <span
           className="my-services"
-          style={{ color: darkMode ? "white" : "black" }}
+          style={{ color: darkMode ? "white" : "" }}
         >
-          Being a student I prefer freelancing and have worked on alot of
-          freelancing platforms.
           <br />
-          I always enjoy building intractive UI's and exceed the client
-          expectations.
+          I always enjoy building intractive UI's and increase customer
+          satisfaction.
           <br />
-          I have hansome grip on html css and javascript the base of web
+          Have strong command on html css and javascript the base of web
           development.
           <br />
-          Being a most popular ,simple and fast I choosed JavaScript
+          Analyze and optimize the performance in existing front end backend
+          systems
+          <br />
+          Implement and maintian performant and scalable data processing backend
+          systems
+          <br />
         </span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
@@ -57,7 +60,7 @@ const Services = () => {
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
-            detail={"Figma, Sketch,Adobe, Photoshop, Illustrator, Adobe xd"}
+            detail={"Figma, Sketch,Adobe Photoshop, Illustrator, Adobe xd"}
           />
         </motion.div>
         {/* second card */}
@@ -69,7 +72,7 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express, Nextjs"}
+            detail={"Html, Css, JavaScript, React, React native, Nextjs"}
           />
         </motion.div>
         {/* 3rd */}
@@ -81,9 +84,7 @@ const Services = () => {
           <Card
             emoji={Humble}
             heading={"UI/UX"}
-            detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
-            }
+            detail={"Node js ,express js, monogodb ,mysql, aws,AI integration "}
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>

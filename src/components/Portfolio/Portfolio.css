@@ -34,6 +34,9 @@
   border-radius: 100px;
   background-color: transparent;
 }
+.portfolio .works2-data .workPara {
+  color: var(--gray2);
+}
 .works2-data {
   position: relative;
   display: flex;

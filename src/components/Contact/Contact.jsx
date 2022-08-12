@@ -14,16 +14,16 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
+        "service_x1knoef",
+        "template_44nii8s",
         form.current,
-        "VLwg1ltOWvnCYAiK_"
+        "hVzRhXpjhxHiOqrF6"
       )
       .then(
         (result) => {
           console.log(result.text);
           setDone(true);
-          form.reset();
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -49,21 +49,20 @@ const Contact = () => {
           large projects. However, if you have other request or question, don’t
           hesitate to use the form.
         </span>
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="user_name"
-            className="user"
-            placeholder="Name"
-          />
+        <form ref={form}>
+          <input type="text" name="name" className="user" placeholder="Name" />
           <input
             type="email"
-            name="user_email"
+            name="email"
             className="user"
             placeholder="Email"
           />
           <textarea name="message" className="user" placeholder="Message" />
-          <input type="submit" value="Send" className="button" />
+          {!done && (
+            <button className="button" onClick={sendEmail}>
+              Send
+            </button>
+          )}
           <span>{done && "Thanks for Contacting me"}</span>
           <div
             className="blur c-blur1"

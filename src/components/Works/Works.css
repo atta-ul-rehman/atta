@@ -29,6 +29,9 @@
   font-size: 14px;
   margin-top: 1rem;
 }
+.works .awesome .aws-info {
+  line-height: 2;
+}
 .works .awesome .s-button {
   width: 8rem;
   height: 3rem;
@@ -36,7 +39,7 @@
 }
 
 /* right side */
-.w-right {
+.works .w-right {
   position: relative;
 }
 
@@ -125,7 +128,7 @@
     justify-content: space-around;
     align-items: inherit;
   }
-  .w-right {
+  .works .w-right {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -134,12 +137,12 @@
     margin-right: 8rem;
   }
 
-  .w-backCircle {
-    left: 8rem !important;
+  .works .w-backCircle {
+    left: 8rem;
   }
   .works .w-left .awesome {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
   .works .awesome > :nth-child(1) {
@@ -162,6 +165,9 @@
     height: 2.5rem;
     margin-top: 2rem;
   }
+  .works .awesome .aws-info {
+    line-height: 2;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -171,48 +177,49 @@
     height: 20rem;
     padding: 0;
     gap: 0rem;
-    justify-content: space-around;
   }
-  .w-left {
+  .works .w-left {
     width: 300px;
   }
-  .w-left .awesome {
-    width: 350px;
+  .works .w-left .awesome {
+    align-items: flex-start;
     margin-left: 0rem;
+    margin-left: 3.5rem;
   }
-  .w-left .awesome .aws-info {
-    width: 250px;
-    margin-left: 0rem;
+  .works .w-left .awesome .aws-info {
+    width: 260px;
+    color: var(--gray2) !important;
+    text-align: left;
+    margin-top: 2rem;
+    font-size: 12px;
+    line-height: 1.5;
   }
-  .w-right {
+  .works .w-right {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     transform: scale(0.6);
     margin-top: -2rem;
+    margin-right: 0rem;
+  }
+  .works .w-mainCircle {
     margin-right: 2rem;
+    left: 0rem;
   }
-  .w-mainCircle {
-    position: static;
+  .works .w-backCircle {
+    right: 8rem;
+    left: 0;
   }
-  /* .w-backCircle {
-    left: 8rem !important;
-    top: -2rem;
-  }  */
+
   .works .awesome > :nth-child(1) {
     color: var(--black);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
   }
   .works .awesome > :nth-child(2) {
     color: var(--orange);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
-  }
-  .works .awesome > :nth-child(3) {
-    color: var(--gray);
-    font-size: 12px;
-    margin-top: 1rem;
   }
   .works .awesome .s-button {
     width: 7rem;
@@ -227,16 +234,30 @@
     flex-direction: column;
     height: 32rem;
     padding: 0;
-    gap: 5rem;
-    margin-bottom: 3rem;
+    gap: 4rem;
+    margin-bottom: 5rem;
   }
-
-  .w-right {
+  .works .w-left {
+    width: 50rem;
+    margin-top: 2rem;
+  }
+  .works .w-left .awesome {
+    align-items: center;
+    margin-left: 0rem;
+  }
+  .w-left .awesome .aws-info {
+    width: 350px;
+    margin-left: 0rem;
+    color: var(--gray2) !important;
+    text-align: left;
+    margin-top: 2rem;
+    font-size: 16px;
+  }
+  .works .w-right {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     transform: scale(0.7);
-    margin-top: -2rem;
     margin-right: -10rem;
   }
   .w-mainCircle {
@@ -248,25 +269,21 @@
   } */
   .works .awesome > :nth-child(1) {
     color: var(--black);
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     font-weight: bold;
   }
   .works .awesome > :nth-child(2) {
     color: var(--orange);
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: bold;
   }
-  .works .awesome > :nth-child(3) {
-    color: var(--gray);
-    font-size: 12px;
-    margin-top: 1rem;
-  }
+
   .works .awesome .s-button {
     width: 7rem;
     height: 2.3rem;
     margin-top: 2rem;
   }
-  .works .aws-info {
-    text-align: center;
+  .works .awesome .aws-info {
+    line-height: 1;
   }
 }
