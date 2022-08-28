@@ -171,3 +171,13 @@
     font-size: medium;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .t-wrapper {
+    height: 75vh;
+  }
+  .testimonial > span {
+    font-size: small;
+    margin-top: 10px;
+  }
+}

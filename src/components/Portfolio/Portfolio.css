@@ -476,3 +476,103 @@
     margin-top: 0px;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .portfolio .techs1 {
+    display: grid;
+    grid-template-columns: 85px 90px 110px;
+    grid-template-rows: 2rem 2rem;
+    grid-column-gap: 1rem;
+    grid-template-areas: 2rem;
+    margin-left: 10px;
+  }
+  .works2-data {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem !important;
+    gap: 0rem;
+  }
+  .works2-data .img1 {
+    width: 16rem;
+  }
+  .works2-data .img1-div {
+    text-align: center;
+  }
+  .works2-data .boxed {
+    display: none;
+  }
+  .works2-data .cntet {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .works2-data .workPara {
+    margin-right: 0;
+    width: 300px;
+
+    font-size: 14px;
+  }
+  .works2-data .worktitle {
+    margin-top: 1rem;
+    font-size: 21px !important;
+  }
+  .works2-data .techs {
+    margin-right: 2rem;
+  }
+  .works2-data::before {
+    display: none;
+  }
+  .works2-data::after {
+    display: none;
+  }
+  .works2-data:hover:after {
+    display: none;
+  }
+  .works2-data:hover:before {
+    display: none;
+  }
+  .works2-data .img1:hover {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .works2-data:hover .boxed {
+    opacity: 1;
+    visibility: visible;
+  }
+  .works2-data:hover .cntet {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    top: 0px;
+    left: 0px;
+    height: max-content;
+    padding-left: 0rem;
+    align-self: inherit;
+    padding-bottom: 0rem;
+  }
+  .works2-data:hover span:nth-child(1) {
+    font-size: 21px !important;
+    font-weight: 500;
+  }
+  .works2-data:hover .workPara {
+    font-size: 14px;
+  }
+  .works2-data .b-github {
+    margin-left: 0;
+    margin-top: 0px;
+  }
+}

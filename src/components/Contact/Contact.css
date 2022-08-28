@@ -34,14 +34,14 @@
   font-weight: bold;
 }
 
-.w-left > form {
+.contact-form .w-left > form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
 }
 
-.w-left .user {
+.contact-form .w-left .user {
   width: 25rem;
   height: 2rem;
   padding: 0.3em;
@@ -195,7 +195,7 @@ textarea {
     gap: 2rem;
     height: 100vh;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
   }
   .contact-form .w-left .user {
     width: 18rem;
@@ -222,5 +222,52 @@ textarea {
   .c-right .map-marker {
     width: 2.5rem;
     height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .contact-form {
+    margin-top: 4rem;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .contact-form .w-left .user {
+    width: 16rem;
+  }
+
+  .contact-form .c-right img {
+    width: 17rem;
+    height: 17rem;
+  }
+  .contact-form .c-right .map-marker {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  .c-right .Address {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    background: rgb(0, 0, 0, 1);
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+  }
+  .c-right .Address span {
+    font-size: large;
+    font-weight: 600;
+  }
+  .c-right .Address p {
+    font-size: smaller;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .c-right .Address .cntct {
+    display: flex;
+    flex-direction: row;
+    font-size: smaller;
+    font-weight: 400;
   }
 }

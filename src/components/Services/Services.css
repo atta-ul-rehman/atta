@@ -150,3 +150,39 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .services {
+    flex-direction: column;
+    gap: 2rem;
+    height: 60rem;
+    padding: 0;
+    margin-top: 16rem;
+  }
+
+  /* .my-services {
+    width: 40vh;
+    line-height: 1;
+    text-align: left;
+  } */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 6vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 18rem;
+    margin-left: 0rem;
+    transform: scale(1.1);
+  }
+  /* .cards > * {
+    position: static;
+  }
+  .services .awesome {
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+  }  */
+}

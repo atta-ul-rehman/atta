@@ -15,8 +15,7 @@
 
 .App {
   padding: 0.5rem 3.5rem;
-  overflow: hidden;
-  color: var(--black);
+  overflow-x: hidden;
 }
 
 .button {
@@ -75,18 +74,18 @@
 @media screen and (max-width: 800px) {
   .App {
     padding: 0.5rem 1rem;
-    border: 2px solid red;
+    position: relative;
+    width: auto;
+    overflow-x: hidden;
   }
 }
-@media screen and (max-width: 680px) {
+/* @media screen and (max-width: 680px) {
   .App {
     padding: 0.5rem 1rem;
+    overflow-x: hidden;
   }
-}
+} */
 @media screen and (max-width: 480px) {
-  .App {
-    padding: 0.5rem 1rem;
-  }
   .button {
     font-size: 14px;
     padding: 8px 20px 8px 20px;
