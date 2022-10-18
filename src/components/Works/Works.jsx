@@ -31,11 +31,7 @@ const Works = () => {
             I have designing and developing user interfaces, testing, debugging,
             and training staff.
             <br />
-            Have Developed projects that got outstanding remarks in my career
-            <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
+            Have Developed projects that got outstanding remarks in my career.
           </span>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>

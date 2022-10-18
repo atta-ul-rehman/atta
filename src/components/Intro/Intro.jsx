@@ -13,6 +13,7 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { openLink } from "../../helper/openLink";
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -37,9 +38,9 @@ const Intro = () => {
             passion for UI effects, animations and creating intuitive, dynamic
             user experiences .Apart form these I also try to make sure that app
             has high performance and responsiveness to requests from the
-            front-end. I am Well-organised person, problem solver, independent
+            back-end. I am Well-organised person, problem solver, independent
             employee with high attention to detail. Fan of MMA, outdoor
-            activities, TV series and English literature. Interested in the
+            activities, TV series and history. Interested in the
             entire frontend spectrum and working on ambitious projects with
             positive people.
           </span>
@@ -51,8 +52,8 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
+          <img src={Github} alt="" onClick={() => openLink("https://github.com/atta-ul-rehman/")} />
+          <img src={LinkedIn} alt="" onClick={() => openLink("https://linkedin.com/in/atta-ul-rehman-b854851a4")} />
           <img src={Instagram} alt="" />
         </div>
       </div>
@@ -74,16 +75,14 @@ const Intro = () => {
           src={glassesimoji}
           alt=""
         />
-
         <motion.div
           initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
+          whileInView={{ left: "50%" }}
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv classn={"floatingDiv1"} img={crown} />
+          <FloatinDiv classn={"floatingDiv"} img={crown} text1={`Frontend-developer`} />
         </motion.div>
-
         {/* animation */}
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}
@@ -95,7 +94,7 @@ const Intro = () => {
           <FloatinDiv
             classn={"floatingDiv"}
             img={thumbup}
-            text1={`Best Design Award`}
+            text1={`Backend-developer`}
           />
         </motion.div>
 

@@ -60,7 +60,7 @@ const Services = () => {
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
-            detail={"Figma, Sketch,Adobe Photoshop, Illustrator, Adobe xd"}
+            detail={"Html5, Css, tailwind, Bootstrap, "}
           />
         </motion.div>
         {/* second card */}
@@ -71,8 +71,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, React native, Nextjs"}
+            heading={"Frontend"}
+            detail={"JavaScript, typescript, React, React native, Nextjs"}
           />
         </motion.div>
         {/* 3rd */}
@@ -83,8 +83,8 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
-            detail={"Node js ,express js, monogodb ,mysql, aws,AI integration "}
+            heading={"Backend"}
+            detail={"Node js ,express js, monogodb , mysql, Aws"}
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>

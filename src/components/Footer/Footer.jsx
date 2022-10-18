@@ -30,7 +30,7 @@ const Footer = () => {
           <Linkin
             className="social-icon"
             onClick={() =>
-              openLink("www.linkedin.com/in/atta-ul-rehman-b854851a4")
+              openLink("https://linkedin.com/in/atta-ul-rehman-b854851a4")
             }
           />
           <Callus
